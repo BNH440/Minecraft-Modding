@@ -1,7 +1,7 @@
 [
 {
-  "modid": "sword",
-  "name": "Cool Sword",
+  "modid": "flex",
+  "name": "Flex Paste Sword",
   "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
