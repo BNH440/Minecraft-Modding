@@ -20,7 +20,7 @@ public class ExampleMod
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
-        myToolMaterial = EnumHelper.addToolMaterial("Flex Tape Sword", 4, 100000, 20.0F, 100.0F, 30);
+        myToolMaterial = EnumHelper.addToolMaterial("my_sword", 4, 100000, 20.0F, 100.0F, 30);
         mySword = new CustomSword();
     }
 
