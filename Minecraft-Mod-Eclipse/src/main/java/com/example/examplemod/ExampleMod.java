@@ -1,9 +1,11 @@
 package com.example.examplemod;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -36,5 +38,15 @@ public class ExampleMod
     {
         // some example code
         System.out.println("DIRT BLOCK >> " + Blocks.DIRT.getUnlocalizedName());
+    }
+    
+    @EventHandler
+    public void whenHurt(LivingHurtEvent event) {
+    	if(event.getEntity() instanceof EntityPlayer) {
+    		System.out.println("Entity is Living: " + event.getEntity().getName());
+    	}
+    	else {
+    		System.out.println("Entity is not Living");
+    	}
     }
 }
