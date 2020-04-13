@@ -21,6 +21,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Navigate to the Correct Directory
-      run: cd /Minecraft-Mod-Eclipse
+      run: cd Minecraft-Mod-Eclipse
     - name: Build with Gradle
       run: .\gradlew build
