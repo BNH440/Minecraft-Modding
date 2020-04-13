@@ -25,7 +25,6 @@ jobs:
     - name: Build with Gradle
       run: ./Minecraft-Mod-Eclipse/gradlew build
     - run: mkdir -p ./Artifacts
-    - run: echo hello > path/to/artifact/world.txt
     - uses: actions/upload-artifact@v1
       with:
         name: modid-1.0.jar
