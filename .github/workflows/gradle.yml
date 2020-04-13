@@ -23,7 +23,7 @@ jobs:
     - name: Go to the correct directory
       run: cd Minecraft-Mod-Eclipse/
     - name: Grant execute permission for gradle
-      run: chmod +x gradlew
+      run: chmod +x ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
     - name: Download artifact
