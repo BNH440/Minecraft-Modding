@@ -28,6 +28,6 @@ jobs:
       uses: actions/download-artifact@v1.0.0
       with:
         #Artifact name
-        name: modid-1.0.jar
+        name: ./Minecraft-Mod-Eclipse/build/libs/modid-1.0.jar
         #Destination path
-        path: ./Minecraft-Mod-Eclipse/build/libs/
+        path: ./Artifacts/
