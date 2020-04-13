@@ -23,4 +23,4 @@ jobs:
     - name: Navigate to the Correct Directory
       run: cd Minecraft-Mod-Eclipse
     - name: Build with Gradle
-      run: .\gradlew build
+      run: gradlew build
